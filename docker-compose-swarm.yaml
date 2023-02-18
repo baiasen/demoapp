@@ -5,7 +5,7 @@ services:
             replicas: 5
         ports:
             - 8080:80
-volumes:
+        volumes:
             - "/home/vagrant/demoapp/web:/var/www/html:ro"
         networks:
             - app-network
